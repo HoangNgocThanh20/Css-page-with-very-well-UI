@@ -9,9 +9,21 @@
   flex-wrap: wrap;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .item:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
 .item {
   position: relative;
-  flex: 1 1 200px;
+  flex: 1;
   border: 2px solid #353535;
   background-color: #747474;
   min-height: 140px;
